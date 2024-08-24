@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-adsense-account" content="ca-pub-4074130011096587">
+    <meta name="google-site-verification" content="qSZcROSBW4sFubwNpIYlMwvNYbQUA_2svJFPt3hfxls" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGKVP Department of Journalism and Mass Communication</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.collegedunia.com/public/college_data/images/appImage/25957_MGKASHI_APP.jpg?h=260&w=360&mode=crop');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.6s ease;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+
+        .sidebar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 2em;
+            font-weight: bold;
+            user-select: none;
+            text-shadow: 0 0 10px #ffffff;
+            transition: transform 0.6s ease, text-shadow 0.3s ease;
+        }
+
+        .sidebar:hover {
+            text-shadow: 0 0 20px #ffffff;
+        }
+
+        .sidebar-menu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .sidebar-menu a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .sidebar-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-menu a:hover {
+            background-color: #333333;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content h2 {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .glowing-button {
+            background-color: #00e6e6;
+            color: #000000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 20px #00e6e6, 0 0 30px #00e6e6, 0 0 40px #00e6e6;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        .glowing-button:hover {
+            box-shadow: 0 0 30px #00b3b3, 0 0 40px #00b3b3, 0 0 50px #00b3b3;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 2em;
+            }
+
+            .content h2 {
+                font-size: 1.2em;
+            }
+
+            .glowing-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .header img {
+                width: 80px;
+            }
+
+            .sidebar {
+                font-size: 1.5em;
+            }
+
+            .sidebar-menu {
+                top: 60px;
+                left: 5px;
+                padding: 5px;
+            }
+
+            .sidebar-menu a {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0.8em;
+            text-shadow: 0 0 10px #ffffff;
+            transition: text-shadow 0.3s ease;
+        }
+
+        .footer:hover {
+            text-shadow: 0 0 20px #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Top Right Logo -->
+    <div class="header" onclick="spinLogoAndRedirect()">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Mahatma_Gandhi_Kashi_Vidyapith_logo.png" alt="MGKVP Logo">
+    </div>
+
+    <!-- Sidebar Button on Left -->
+    <div class="sidebar" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu" id="sidebarMenu">
+        <a href="https://wa.link/4jrun4" target="_blank">Contact the Developer</a>
+        <a href="https://www.instagram.com/kashividhyapith?igsh=eWNyNjY0am5heTBs" target="_blank">Follow MGKVP on Instagram</a>
+        <a href="https://www.instagram.com/uzairvibes?igsh=MXEwczdtd290aXl0Zw==" target="_blank">Talk to Developer on Instagram</a>
+        <a href="https://chat.whatsapp.com/Im7qVdo3SgX22weOw8FfdZ" target="_blank">Join the WhatsApp Group</a>
+        <a href="https://uzairb2b.blogspot.com" target="_blank">Uzair B2B Services</a>
+        <a href="https://educationsimplified.github.io/internship/" target="_blank">Internships</a>
+        <a href="https://educationsimplified.github.io/skills/" target="_blank">Skilled Courses</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>MGKVP Department of Journalism and Mass Communication</h1>
+        <h2>Providing the Digital Shift to Technology Learning—All the Journalism Tools in One Place.</h2>
+        <button class="glowing-button" onclick="redirectToJoin()">Click Below to Join</button>
+    </div>
+
+    <!-- Footer with Glowing Effect -->
+    <div class="footer">
+        <a href="https://www.instagram.com/uzairvibes?igsh=MXEwczdtd290aXl0Zw==" target="_blank" style="color: #ffffff; text-decoration: none;">
+            Made by: Uzair Ahmed @2024, B.A.(Hons) Mass Communication Student
+        </a>
+    </div>
+
+    <script>
+        // Toggle Sidebar Menu with Spin Effect
+        function toggleSidebar() {
+            var sidebarMenu = document.getElementById('sidebarMenu');
+            var sidebarIcon = document.querySelector('.sidebar');
+
+            if (sidebarMenu.style.display === 'block') {
+                sidebarMenu.style.display = 'none';
+                sidebarIcon.style.transform = 'rotate(-360deg)';
+            } else {
+                sidebarMenu.style.display = 'block';
+                sidebarIcon.style.transform = 'rotate(360deg)';
+            }
+        }
+
+        // Spin Logo and Redirect
+        function spinLogoAndRedirect() {
+            var logo = document.querySelector('.header');
+
+            logo.style.transform = 'rotate(360deg)';
+
+            setTimeout(function() {
+                window.location.href = 'https://mgkvp.ac.in/';
+                logo.style.transform = 'rotate(0deg)';
+            }, 600); // Matches the transition duration
+        }
+
+        // Redirect to Join Link
+        function redirectToJoin() {
+            window.location.href = 'https://educationsimplified.github.io/universe/';
+        }
+    </script>
+
+</body>
+</html>
